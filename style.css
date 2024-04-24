@@ -171,3 +171,25 @@ a:active {
     flex-flow: row;
     flex-direction: column;
 }
+
+.gameplaytext {
+    overflow: hidden;
+  border-right: .15em solid rgb(103, 109, 204);
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    width: 24%;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 24% }
+}
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(80, 113, 221); }
+}
