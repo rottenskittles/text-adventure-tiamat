@@ -176,7 +176,7 @@ a:active {
     background-color: rgb(118, 97, 147);
     color: white;
     border: 2px solid #ffffff;
-    width: 15.8%;
+    width: 279px;
     padding: 0.3em 0.5em;
     margin: 10px;
 }
@@ -185,22 +185,26 @@ a:active {
 
     overflow: hidden;
 color: white;
+background-color:rgb(18, 0, 43);
   border-right: .15em solid rgb(103, 109, 204);
   white-space: nowrap; 
-  margin: 0 auto; 
+  margin: 350 200 0 200 auto; 
   letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-    width: 23.6%;
+    width: 412px;
+    display: flex;
+    
 }
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 24% }
+    to { width: 412px }
 }
 
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(80, 113, 221); }
 }
+
