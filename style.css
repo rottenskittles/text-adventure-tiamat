@@ -83,6 +83,16 @@ a:active {
     font-size: larger;
 }
 
+.butt-o-n{
+    display: block;
+    margin: 2em;
+    padding: 1em;
+    font-size: medium;
+    font-family: Aref Ruqaa;
+    background-color: rgb(216, 225, 125);
+    border: 5px double rgb(122, 140, 6);
+}
+
 /* Slideshow container */
 .slideshow-container{
     width: 50%;
