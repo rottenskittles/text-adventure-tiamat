@@ -27,6 +27,10 @@
 //   //dots[slideIndex-1].className += " active";
 // }
 
+function toggleVis(elementID){
+  document.getElementById(elementID).classList.toggle("hidden");
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByClassName("gameBtn");
@@ -38,8 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (btnVal) {
         case "tavernkeep":
           console.log("tavernkeep")
-          document.getElementById("start").classList.add("hidden");
-          document.getElementById("tvkdialogue").classList.remove("hidden");
+          // document.getElementById("start").classList.add("hidden");
+          toggleVis('start');
+          // document.getElementById("tvkdialogue").classList.remove("hidden");
+          toggleVis('tvkdialogue')
           break;
 
       }
@@ -48,5 +54,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByClassName("gameBtn");
+  for (button of buttons) {
+    button.addEventListener("click", function (e) {
 
+      let btnVal = e.target.value;
+      console.log(e.target)
+      switch (btnVal) {
+        case "cards":
+          console.log("cards")
+          toggleVis('start');
+          toggleVis('cardtable');
+          break;
 
+      }
+    })
+  }
+
+})
