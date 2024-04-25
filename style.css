@@ -188,7 +188,9 @@ color: white;
 background-color:rgb(18, 0, 43);
   border-right: .15em solid rgb(103, 109, 204);
   white-space: nowrap; 
-  margin: 350 200 0 200 auto; 
+  margin-top: 350;
+  display: flex;
+  align-items: center;
   letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(40, end),
@@ -206,5 +208,10 @@ background-color:rgb(18, 0, 43);
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(80, 113, 221); }
+}
+
+
+.hidden{
+    display:none;
 }
 
