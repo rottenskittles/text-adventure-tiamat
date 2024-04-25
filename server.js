@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function (e) {
 
       let btnVal = e.target.value;
+      console.log(e.target)
       switch (btnVal) {
         case "tavernkeep":
           console.log("tavernkeep")
@@ -41,10 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("tvkdialogue").classList.remove("hidden");
           break;
 
-  }})
-    }
+      }
+    })
+  }
 
-  })
+})
 
 
 
