@@ -15,8 +15,18 @@
 
     <body>
         <h1 class="gameplaytitle">Tavernventures</h1>
-        <section class="gameplay" id="start">
-            <p class="gameplaytext">You wake up in a tavern, a little confused</p>
+        <section class="intro" id="start">
+            <p>You wake up in a tavern, a little confused as to how you got there. The last thing
+                you remember is getting hit in the head with an orb for running away with some fruit you took from a
+                vendor because you were hungry...</p>
+            <section class="gameBtn">
+                <button class="options" id="introcont" value="introcont">Continue</button>
+            </section>
+        </section>
+
+
+        <section class="hidden" id="gameplay">
+            <p class="gameplaytext">You are in the tavern</p>
             <section class="gameBtn">
                 <button class="options" id="tavernkeep" value="tavernkeep">Talk to tavernkeep</button>
                 <button class="options" id="cards" value="cards">Go to card playing table</button>
@@ -31,13 +41,59 @@
                 <button class="options" id="buytavern" value="buytavern">Buy items</button>
                 <button class="options" id="backtavern" value="backtavern">Back</button>
             </section>
+        </section>
 
-            <section id="cardtable" class="hidden">
-                <p class="gameplaytext">You walk over to the table with people playing cards</p>
-                <section class="gameBtn">
-                    <button class="options" id="cardplay" value="cardplay">Play cards</button>
-                    <button class="options" id="backcards" value="backcards">Back</button>
-                </section>
+
+
+        <section id="team" class="hidden">
+            <p class="gameplaytext">"Oh...well, how come?"</p>
+            <section class="gameBtn">
+                <button class="options" id="goodreason" value="goodreason">Give good reason</button>
+                <button class="options" id="badreason" value="badreason">Give bad reason</button>
+                <button class="options" id="backteamask" value="backteamask">Back</button>
+            </section>
+        </section>
+
+        <section id="teamyes" class="hidden">
+            <p class="joinsuccess">The tavernkeep has joined your team!</p>
+            <p class="gameplaytext">"...I guess that sounds pretty intriguing...sure."</p>
+            <section class="gameBtn">
+                <button class="options" id="yesteam" value="yesteam">Continue</button>
+            </section>
+        </section>
+
+        <section id="teamno" class="hidden">
+            <p class="gameplaytext">"...No thanks. I'm not interested."</p>
+            <section class="gameBtn">
+                <button class="options" id="noteam" value="noteam">Continue</button>
+            </section>
+        </section>
+
+        <section id="deathorreset" class="hidden">
+            <h2>YOU LOSE</h2>
+            <p>After the tavernkeep said no to your request, you cried until there was no water left in your system. You
+                then shriveled up like a raisin and died from dehydration.</p>
+            <section class="gameBtn">
+                <button class="options" id="tvkreset" value="tvkreset">Restart</button>
+            </section>
+        </section>
+
+
+
+        <section id="cardtable" class="hidden">
+            <p class="gameplaytext">You walk over to the table with people playing cards</p>
+            <section class="gameBtn">
+                <button class="options" id="cardplay" value="cardplay">Play cards</button>
+                <button class="options" id="backcards" value="backcards">Back</button>
+            </section>
+        </section>
+
+        <section id="boasttable" class="hidden">
+            <p class="gameplaytext">You walk over to the table with boasting about past achievements</p>
+            <section class="gameBtn">
+                <button class="options" id="boastsit" value="boastsit">Sit and listen</button>
+                <button class="options" id="backboast" value="backboast">Back</button>
+            </section>
         </section>
     </body>
 
