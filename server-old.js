@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (btnVal) {
         case "introcont":
           console.log("introcont")
+          // document.getElementById("start").classList.add("hidden");
           toggleVis('start');
+          // document.getElementById("gameplay").classList.remove("hidden");
           toggleVis('gameplay');
           break;
 
@@ -59,28 +61,55 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (btnVal) {
         case "tavernkeep":
           console.log("tavernkeep")
+          // document.getElementById("start").classList.add("hidden");
           toggleVis('gameplay');
+          // document.getElementById("tvkdialogue").classList.remove("hidden");
           toggleVis('tvkdialogue');
           break;
 
-        case "cards":
-          console.log("cards")
-          toggleVis('gameplay');
-          toggleVis('cardtable');
-          break;
-        
-          case "boasters":
-          console.log("boasters")
-          toggleVis('gameplay');
-          toggleVis('boasttable');
-          break;
       }
     })
   }
 
 })
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByClassName("gameBtn");
+  for (button of buttons) {
+    button.addEventListener("click", function (dif) {
 
+      let btnVal = dif.target.value;
+      console.log(dif.target)
+      switch (btnVal) {
+        case "cards":
+          console.log("cards")
+          toggleVis('gameplay');
+          toggleVis('cardtable');
+          break;
 
+      }
+    })
+  }
+
+})
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByClassName("gameBtn");
+  for (button of buttons) {
+    button.addEventListener("click", function (dif) {
+
+      let btnVal = dif.target.value;
+      console.log(dif.target)
+      switch (btnVal) {
+        case "backcards":
+          console.log("backcards")
+          toggleVis('cardtable');
+          toggleVis('gameplay');
+          break;
+
+      }
+    })
+  }
+
+})
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByClassName("gameBtn");
   for (button of buttons) {
@@ -95,11 +124,25 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('gameplay');
           break;
 
-        case "boastsit":
-          console.log("boastsit")
+      }
+    })
+  }
+
+})
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByClassName("gameBtn");
+  for (button of buttons) {
+    button.addEventListener("click", function (dif) {
+
+      let btnVal = dif.target.value;
+      console.log(dif.target)
+      switch (btnVal) {
+        case "boasters":
+          console.log("boasters")
+          toggleVis('gameplay');
           toggleVis('boasttable');
-          toggleVis('sitandlisten');
           break;
+
       }
     })
   }
@@ -879,17 +922,44 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('cardplayending');
           break;
 
-          case "cardreset":
-            console.log("cardreset")
-            toggleVis('cardplayending');
-            toggleVis('gameplay');
-            break;
+      }
+    })
+  }
 
-          case "backcards":
-            console.log("backcards")
-            toggleVis('cardtable');
-            toggleVis('gameplay');
-            break;
+})
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByClassName("gameBtn");
+  for (button of buttons) {
+    button.addEventListener("click", function (dif) {
+
+      let btnVal = dif.target.value;
+      console.log(dif.target)
+      switch (btnVal) {
+        case "cardreset":
+          console.log("cardreset")
+          toggleVis('cardplayending');
+          toggleVis('gameplay');
+          break;
+
+      }
+    })
+  }
+
+})
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByClassName("gameBtn");
+  for (button of buttons) {
+    button.addEventListener("click", function (dif) {
+
+      let btnVal = dif.target.value;
+      console.log(dif.target)
+      switch (btnVal) {
+        case "backcards":
+          console.log("backcards")
+          toggleVis('cardtable');
+          toggleVis('gameplay');
+          break;
+
       }
     })
   }
