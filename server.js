@@ -374,9 +374,14 @@ document.addEventListener("DOMContentLoaded", function () {
         case "potion3yes":
           console.log("potion3yes")
           toggleVis('potion3confirm');
-          toggleVis('buytav');
+          toggleVis('deathorreset2');
           break;
 
+        case "potionreset":
+          console.log("potionreset")
+          toggleVis ('deathorreset2');
+          toggleVis ('gameplay');
+          break;
       }
     })
   }

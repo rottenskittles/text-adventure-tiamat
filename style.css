@@ -13,6 +13,11 @@ p, h2 {
     color: #ffffff;
 }
 
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
 * {
     box-sizing: border-box
 }
@@ -149,7 +154,7 @@ a:active {
     color: #ffffff;
     font-size: x-large;
     text-align: center;
-    padding: 8em 3em 1em 3em;
+    padding: 1em 3em 1em 3em;
 }
 
 .options {
