@@ -16,6 +16,7 @@
     <body>
         <h1 class="gameplaytitle">Tavernventures</h1>
         <section class="intro" id="start">
+            <img src="images/thoughtbubble.png" class="backgrounds">
             <p class="info">You wake up in a tavern, a little confused as to how you got there. The last thing
                 you remember is getting hit in the head with an orb for running away with some fruit you took from a
                 vendor because you were hungry...</p>
@@ -188,15 +189,33 @@
             </section>
         </section>
         <section id="cardtable" class="hidden">
+            <img src="images/cardtable.png" class="backgrounds">
             <p class="gameplaytext">You walk over to the table with people playing cards</p>
             <section class="gameBtn">
                 <button class="options" id="cardplay" value="cardplay">Play cards</button>
                 <button class="options" id="backcards" value="backcards">Back</button>
             </section>
         </section>
+        <section id="playcard" class="hidden">
+            <img src="images/cards.png" class="backgrounds">
+            <p class="gameplaytext">Choose a card to play</p>
+            <section class="gameBtn">
+                <button class="options" id="card-king" value="card-king">King</button>
+                <button class="options" id="card-queen" value="card-queen">Queen</button>
+            </section>
+        </section>
+
+        <section id="cardwin" class="hidden">
+            <img src="images/cards.png" class="backgrounds">
+            <p class="gameplaytext">You won the game!</p>
+            <section class="gameBtn">
+                <button class="options" id="cardwincont" value="cardwincont">Continue</button>
+            </section>
+        </section>
         <section id="cardplayending" class="hidden">
             <h2>ENDING</h2>
-            <p>Due to playing cards and getting addicted, you lost all your money. The tavernkeep then offered you a job
+            <img src="images/ending.png" class="backgrounds">
+            <p class="info"> You lost the first game by picking the king card. Due to continuing to play to try and win, you lost all your money. The tavernkeep then offered you a job
                 and a place to stay in the tavern. Since you were flat out broke and didn't know your way around, you
                 accepted the offer.</p>
                 <section class="gameBtn">

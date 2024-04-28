@@ -96,7 +96,12 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('buytav');
           break;
           
-        
+        case "backtavshop":
+          console.log("backtavshop")
+          toggleVis('buytav');
+          toggleVis('tvkdialogue');
+          break;        
+
       }
     })
   }
@@ -300,26 +305,12 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('potion2confirm');
           toggleVis('potion2details');
           break;
-      }
-    })
-  }
 
-})
-
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "backpotion2":
           console.log("backpotion2")
           toggleVis('potion2details');
           toggleVis('buytav');
-          break;
-
+          break;          
       }
     })
   }
@@ -339,38 +330,12 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('potion3details');
           break;
 
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "buypotion3":
           console.log("buypotion3")
           toggleVis('potion3details');
           toggleVis('potion3confirm');
-          break;
-
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
+          break;  
+          
         case "potion3yes":
           console.log("potion3yes")
           toggleVis('potion3confirm');
@@ -381,45 +346,19 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log("potionreset")
           toggleVis ('deathorreset2');
           toggleVis ('gameplay');
-          break;
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
+          break;  
+          
         case "potion3no":
           console.log("potion3no")
           toggleVis('potion3confirm');
           toggleVis('potion3details');
           break;
 
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "backpotion3":
           console.log("backpotion3")
           toggleVis('potion3details');
           toggleVis('buytav');
           break;
-
       }
     })
   }
@@ -433,74 +372,33 @@ document.addEventListener("DOMContentLoaded", function () {
       let btnVal = dif.target.value;
       console.log(dif.target)
       switch (btnVal) {
-        case "backtavshop":
-          console.log("backtavshop")
-          toggleVis('buytav');
-          toggleVis('tvkdialogue');
-          break;
-
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
-        case "teamup":
-          console.log("teamup")
-          toggleVis('tvkdialogue');
-          toggleVis('team');
-          break;
-
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
+        
         case "backteamask":
           console.log("backteamask")
           toggleVis('team');
           toggleVis('tvkdialogue');
           break;
 
-      }
-    })
-  }
+        case "teamup":
+          console.log("teamup")
+          toggleVis('tvkdialogue');
+          toggleVis('team');
+          break;
 
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "goodreason":
           console.log("goodreason")
           toggleVis('team');
           toggleVis('teamyes');
-          break;
+          break;     
+          
+          
 
       }
     })
   }
 
-})
+}) 
+
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByClassName("gameBtn");
   for (button of buttons) {
@@ -553,19 +451,6 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('deathorreset');
           break;
 
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "tvkreset":
           console.log("tvkreset")
           toggleVis('deathorreset');
@@ -588,13 +473,31 @@ document.addEventListener("DOMContentLoaded", function () {
         case "cardplay":
           console.log("cardplay")
           toggleVis('cardtable');
-          toggleVis('cardplayending');
+          toggleVis('playcard');
           break;
+
+          case "card-king":
+            console.log("card-king")
+            toggleVis('playcard');
+            toggleVis('cardplayending');
+            break;
 
           case "cardreset":
             console.log("cardreset")
             toggleVis('cardplayending');
             toggleVis('gameplay');
+            break;
+
+          case "card-queen":
+            console.log("card-queen")
+            toggleVis('playcard');
+            toggleVis('cardwin');
+            break;
+
+          case "cardwincont":
+            console.log("cardwincont")
+            toggleVis('cardwin');
+            toggleVis('cardtable');
             break;
 
           case "backcards":
