@@ -71,10 +71,52 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('boasttable');
           toggleVis('sitandlisten');
           break;
+
+        case "boastcont":
+          console.log("boastcont")
+          toggleVis('sitandlisten');
+          toggleVis('manask');
+          break;
+
+        case "manrespond":
+          console.log("manrespond")
+          toggleVis('manask');
+          toggleVis('questtell');
+          break;
+
+        case "questtellcont":
+          console.log("questtellcont")
+          toggleVis('questtell');
+          toggleVis('quest');
+          break;
+
+        case "questaccept":
+          console.log("questaccept")
+          toggleVis('quest');
+          toggleVis('questyes');
+          break;
+
+        case "playagain":
+          console.log("playagain")
+          toggleVis('questyes');
+          toggleVis('start');
+          break;
+
+        case "questdecline":
+          console.log("questdecline")
+          toggleVis('quest');
+          toggleVis('questno');
+          break;
+
+        case "playagain2":
+          console.log("playagain2")
+          toggleVis('questno');
+          toggleVis('start');
+          break;
+
       }
     })
   }
-
 })
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByClassName("gameBtn");
@@ -345,7 +387,7 @@ document.addEventListener("DOMContentLoaded", function () {
         case "potionreset":
           console.log("potionreset")
           toggleVis ('deathorreset2');
-          toggleVis ('gameplay');
+          toggleVis ('start');
           break;  
           
         case "potion3no":
@@ -390,78 +432,36 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleVis('team');
           toggleVis('teamyes');
           break;     
-          
-          
 
-      }
-    })
-  }
-
-}) 
-
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "yesteam":
           console.log("yesteam")
           toggleVis('teamyes');
           toggleVis('gameplay');
-          break;
+          break;          
 
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "badreason":
           console.log("badreason")
           toggleVis('team');
           toggleVis('teamno');
           break;
 
-      }
-    })
-  }
-
-})
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByClassName("gameBtn");
-  for (button of buttons) {
-    button.addEventListener("click", function (dif) {
-
-      let btnVal = dif.target.value;
-      console.log(dif.target)
-      switch (btnVal) {
         case "noteam":
           console.log("noteam")
           toggleVis('teamno');
-          toggleVis('deathorreset');
+          toggleVis('deathorreset1');
           break;
 
         case "tvkreset":
           console.log("tvkreset")
-          toggleVis('deathorreset');
-          toggleVis('gameplay');
+          toggleVis('deathorreset1');
+          toggleVis('start');
           break;
 
       }
     })
   }
 
-})
+}) 
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByClassName("gameBtn");
   for (button of buttons) {
@@ -485,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function () {
           case "cardreset":
             console.log("cardreset")
             toggleVis('cardplayending');
-            toggleVis('gameplay');
+            toggleVis('start');
             break;
 
           case "card-queen":

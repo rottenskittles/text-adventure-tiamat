@@ -15,6 +15,7 @@
 
     <body>
         <h1 class="gameplaytitle">Tavernventures</h1>
+        <button class="button2"><a href="index.html">Back</a></button>
         <section class="intro" id="start">
             <img src="images/thoughtbubble.png" class="backgrounds">
             <p class="info">You wake up in a tavern, a little confused as to how you got there. The last thing
@@ -55,7 +56,7 @@
             </section>
         </section>
         <section id="teamyes" class="hidden">
-            <img src="images/tavernkeep.png" class="backgrounds">
+            <img src="images/checkmark.png" class="backgrounds">
             <p class="joinsuccess">The tavernkeep has joined your team!</p>
             <p class="gameplaytext">"I guess that sounds pretty intriguing...alright, sure."</p>
             <section class="gameBtn">
@@ -63,7 +64,7 @@
             </section>
         </section>
         <section id="teamno" class="hidden">
-            <img src="images/tavernkeep.png" class="backgrounds">
+            <img src="images/x-mark.png" class="backgrounds">
             <p class="gameplaytext">"...No thanks. I'm not interested."</p>
             <section class="gameBtn">
                 <button class="options" id="noteam" value="noteam">Continue</button>
@@ -72,7 +73,8 @@
         <section id="deathorreset1" class="hidden">
             <h2>YOU LOSE</h2>
             <img src="images/gameover.png" class="backgrounds">
-            <p>After the tavernkeep said no to your request, you cried until there was no water left in your system. You
+            <p class="info">After the tavernkeep said no to your request, you cried until there was no water left in
+                your system. You
                 then shriveled up like a raisin and died from dehydration.</p>
             <section class="gameBtn">
                 <button class="options" id="tvkreset" value="tvkreset">Restart</button>
@@ -122,7 +124,8 @@
         </section>
         <section id="item3details" class="hidden">
             <img src="images/sword.png" class="backgrounds">
-            <p class="gameplaytext">Wooden Sword - Made from the wood used for the tavern. Pretty strong, surprisingly</p>
+            <p class="gameplaytext">Wooden Sword - Made from the wood used for the tavern. Pretty strong, surprisingly
+            </p>
             <section class="gameBtn">
                 <button class="options" id="buyitem3" value="buyitem3">Buy</button>
                 <button class="options" id="backitem3" value="backitem3">Back</button>
@@ -204,7 +207,6 @@
                 <button class="options" id="card-queen" value="card-queen">Queen</button>
             </section>
         </section>
-
         <section id="cardwin" class="hidden">
             <img src="images/cards.png" class="backgrounds">
             <p class="gameplaytext">You won the game!</p>
@@ -215,21 +217,24 @@
         <section id="cardplayending" class="hidden">
             <h2>ENDING</h2>
             <img src="images/ending.png" class="backgrounds">
-            <p class="info"> You lost the first game by picking the king card. Due to continuing to play to try and win, you lost all your money. The tavernkeep then offered you a job
+            <p class="info"> You lost the first game by picking the king card. Due to continuing to play to try and win,
+                you lost all your money. The tavernkeep then offered you a job
                 and a place to stay in the tavern. Since you were flat out broke and didn't know your way around, you
                 accepted the offer.</p>
-                <section class="gameBtn">
-                    <button class="options" id="cardreset" value="cardreset">Restart</button>
-                </section>
+            <section class="gameBtn">
+                <button class="options" id="cardreset" value="cardreset">Play Again</button>
+            </section>
         </section>
         <section id="boasttable" class="hidden">
+            <img src="images/boasttable.png" class="backgrounds">
             <p class="gameplaytext">You walk over to the table with boasting about past achievements</p>
             <section class="gameBtn">
                 <button class="options" id="boastsit" value="boastsit">Sit and listen</button>
                 <button class="options" id="backboast" value="backboast">Back</button>
             </section>
         </section>
-        <section id="sitandisten" class="hidden">
+        <section id="sitandlisten" class="hidden">
+            <img src="images/stories.png" class="backgrounds">
             <p class="gameplaytext">After sitting down, you hear amazing stories about beasts and monsters being
                 defeated.</p>
             <section class="gameBtn">
@@ -238,9 +243,54 @@
         </section>
 
         <section id="manask" class="hidden">
-            <p class="gameplaytext">Some time after, one of the people at the table looks at you. "What about you, kid?
-                You done anything worth mentioning?"</p>
+            <img src="images/boasttable.png" class="backgrounds">
+            <p class="gameplaytext">Some time after, one of the people at the table looks at you. "What about you, kid?"</p>
+            <section class="gameBtn">
+                <button class="options" id="manrespond" value="manrespond">"No...nothing yet."</button>
+            </section>
+        </section>
 
+        <section id="questtell" class="hidden">
+            <p class="info">The man then tells you about the legendarily dangerous dragon, Tiamat. He shows you
+                a sketch that makes your eyes widen due to the five terrifying heads the dragon has. He then gives you a
+                quest that's even more shocking than the heads.</p>
+            <section class="gameBtn">
+                <button class="options" id="questtellcont" value="questtellcont">Continue</button>
+            </section>
+        </section>
+
+        <section id="quest" class="hidden">
+            <img src="images/questionmk.png" class="backgrounds">
+            <p class="gameplaytext">"Defeat Tiamat."</p>
+            <section class="gameBtn">
+                <button class="options" id="questaccept" value="questaccept">Accept quest</button>
+                <button class="options" id="questdecline" value="questdecline">Decline quest</button>
+            </section>
+        </section>
+
+        <section id="questyes" class="hidden">
+            <h2>CONGRATULATIONS!!!</h2>
+            <img src="images/winnerwinnerchickendinner.gif" class="backgrounds">
+            <p class="info">Everyone at the table cheered for you and gave you items to help on your journey, including
+                a map to Tiamat's cave. Someone then stood up and annouced your bravery, and everyone in the tavern
+                cheered you on and gave you some more things to help out. They all said goodbye as they watched you walk
+                out of the tavern and onto your adventure.</p>
+            <section class="gameBtn">
+                <button class="options" id="playagain" value="playagain">Play Again</button>
+            </section>
+        </section>
+
+        <section id="questno" class="hidden">
+            <h2>ENDING</h2>
+            <img src="images/ending.png" class="backgrounds">
+            <p class="info">Everyone at the table laughed at you for being a coward, embarassing you. Someone from the
+                table stood up and announced what you did, casuing everyone else to start laughing. Out of sheer
+                embarassment, you ran out of the tavern. After a while, you find a vacant lakeside cabin. With fishing
+                rods on the mini dock and all the fish you can get in the lake, you decide to live there...<em>and start
+                planning the downfall of everyone in that tavern.</em></p>
+            <section class="gameBtn">
+                <button class="options" id="playagain2" value="playagain2">Play Again</button>
+            </section>
         </section>
     </body>
 
